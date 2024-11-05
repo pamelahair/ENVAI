@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "icons": { 
+   "16": "d5digital.png",
+   "48": "d5digital.png",
+   "128": "d5digital.png" },
+  "name": "Envato Elements Downloader by D5digital.net",
+  "description": "With this tool you can download any file on the envato elements site. For order credits visit website: www.d5digital.net",
+  "version": "1.4",
+  "content_scripts": [
+    {
+      "matches": ["https://elements.envato.com/*"],
+      "js": ["envato.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
